@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Birl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sm4-uw-qWY">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AudioCell" rowHeight="100" id="ONW-ZC-uYy" customClass="AudioTableViewCell" customModule="Birl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ONW-ZC-uYy" id="K7B-j0-a4h">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAl-65-yYC">
+                                                    <rect key="frame" x="492" y="8" width="90" height="83.5"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="whatsAppButtonClicked:" destination="ONW-ZC-uYy" eventType="touchUpInside" id="lsl-ij-zJh"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poi-Bo-0zZ">
+                                                    <rect key="frame" x="8" y="8" width="474" height="83.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lAl-65-yYC" secondAttribute="bottom" id="1z6-eO-5Nx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lAl-65-yYC" secondAttribute="trailing" constant="10" id="49B-TJ-ZMF"/>
+                                                <constraint firstItem="lAl-65-yYC" firstAttribute="top" secondItem="K7B-j0-a4h" secondAttribute="topMargin" id="Abl-bs-U4c"/>
+                                                <constraint firstItem="lAl-65-yYC" firstAttribute="width" secondItem="K7B-j0-a4h" secondAttribute="width" multiplier="0.15" id="PQ5-r5-bir"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="poi-Bo-0zZ" secondAttribute="bottom" id="UgA-UY-3cQ"/>
+                                                <constraint firstItem="poi-Bo-0zZ" firstAttribute="top" secondItem="K7B-j0-a4h" secondAttribute="topMargin" id="WJm-0H-lDb"/>
+                                                <constraint firstItem="lAl-65-yYC" firstAttribute="leading" secondItem="poi-Bo-0zZ" secondAttribute="trailing" constant="10" id="nIf-zr-p1i"/>
+                                                <constraint firstItem="poi-Bo-0zZ" firstAttribute="leading" secondItem="K7B-j0-a4h" secondAttribute="leadingMargin" id="ys4-x4-0NL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="poi-Bo-0zZ" id="njf-Xf-G1T"/>
+                                            <outlet property="whatsAppButton" destination="lAl-65-yYC" id="12O-XJ-n8j"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sm4-uw-qWY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7KP-cU-p5U"/>
+                            <constraint firstAttribute="trailing" secondItem="sm4-uw-qWY" secondAttribute="trailing" id="gY4-wk-qPt"/>
+                            <constraint firstItem="sm4-uw-qWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ia4-Wt-fL3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sm4-uw-qWY" secondAttribute="bottom" id="qZx-HW-87J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sm4-uw-qWY" id="8i3-rr-pah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="387"/>
+        </scene>
+    </scenes>
+</document>

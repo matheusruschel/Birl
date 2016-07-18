@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C83FD6F1D3C497F00DB1F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FD6E1D3C497F00DB1F86 /* AppDelegate.swift */; };
+		2C83FD711D3C497F00DB1F86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FD701D3C497F00DB1F86 /* ViewController.swift */; };
+		2C83FD741D3C497F00DB1F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FD721D3C497F00DB1F86 /* Main.storyboard */; };
+		2C83FD761D3C497F00DB1F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FD751D3C497F00DB1F86 /* Assets.xcassets */; };
+		2C83FD791D3C497F00DB1F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FD771D3C497F00DB1F86 /* LaunchScreen.storyboard */; };
+		2C83FD841D3C497F00DB1F86 /* BirlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FD831D3C497F00DB1F86 /* BirlTests.swift */; };
+		2C83FD8F1D3C497F00DB1F86 /* BirlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FD8E1D3C497F00DB1F86 /* BirlUITests.swift */; };
+		2C83FD9D1D3C4DA900DB1F86 /* show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FD9C1D3C4DA900DB1F86 /* show.mp3 */; };
+		2C83FD9F1D3C4E4800DB1F86 /* birl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FD9E1D3C4E4800DB1F86 /* birl.mp3 */; };
+		2C83FDA21D3C6DBC00DB1F86 /* que-num-vai-da-pai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA11D3C6DBC00DB1F86 /* que-num-vai-da-pai.mp3 */; };
+		2C83FDA91D3C6EE400DB1F86 /* iiiiiiuuuuuuuu-bmabma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA31D3C6EE400DB1F86 /* iiiiiiuuuuuuuu-bmabma.mp3 */; };
+		2C83FDAA1D3C6EE400DB1F86 /* 37-anos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA41D3C6EE400DB1F86 /* 37-anos.mp3 */; };
+		2C83FDAB1D3C6EE400DB1F86 /* trapezio-descendente_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA51D3C6EE400DB1F86 /* trapezio-descendente_1.mp3 */; };
+		2C83FDAC1D3C6EE400DB1F86 /* 13-memo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA61D3C6EE400DB1F86 /* 13-memo.mp3 */; };
+		2C83FDAD1D3C6EE400DB1F86 /* porra_10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA71D3C6EE400DB1F86 /* porra_10.mp3 */; };
+		2C83FDAE1D3C6EE400DB1F86 /* bambam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDA81D3C6EE400DB1F86 /* bambam.mp3 */; };
+		2C83FDB21D3C70C800DB1F86 /* bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDAF1D3C70C800DB1F86 /* bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3 */; };
+		2C83FDB31D3C70C800DB1F86 /* trapezio-descendente-e-o-nome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB01D3C70C800DB1F86 /* trapezio-descendente-e-o-nome.mp3 */; };
+		2C83FDB41D3C70C800DB1F86 /* quero-mais-quero-mais.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB11D3C70C800DB1F86 /* quero-mais-quero-mais.mp3 */; };
+		2C83FDB61D3C715300DB1F86 /* bam_bam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB51D3C715300DB1F86 /* bam_bam.mp3 */; };
+		2C83FDBA1D3C721000DB1F86 /* bambam-aqui-e-bodybuilding-porra-mp3cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB71D3C721000DB1F86 /* bambam-aqui-e-bodybuilding-porra-mp3cut.mp3 */; };
+		2C83FDBB1D3C721000DB1F86 /* bambam-_aqui-e-bodybuilding-porra_-360p.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB81D3C721000DB1F86 /* bambam-_aqui-e-bodybuilding-porra_-360p.mp3 */; };
+		2C83FDBC1D3C721000DB1F86 /* eita-porra_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C83FDB91D3C721000DB1F86 /* eita-porra_1.mp3 */; };
+		2C83FDBE1D3C740200DB1F86 /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83FDBD1D3C740200DB1F86 /* AudioTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C83FD801D3C497F00DB1F86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C83FD631D3C497F00DB1F86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C83FD6A1D3C497F00DB1F86;
+			remoteInfo = Birl;
+		};
+		2C83FD8B1D3C497F00DB1F86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C83FD631D3C497F00DB1F86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C83FD6A1D3C497F00DB1F86;
+			remoteInfo = Birl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C83FD6B1D3C497F00DB1F86 /* Birl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C83FD6E1D3C497F00DB1F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C83FD701D3C497F00DB1F86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C83FD731D3C497F00DB1F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C83FD751D3C497F00DB1F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C83FD781D3C497F00DB1F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C83FD7A1D3C497F00DB1F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C83FD7F1D3C497F00DB1F86 /* BirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C83FD831D3C497F00DB1F86 /* BirlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirlTests.swift; sourceTree = "<group>"; };
+		2C83FD851D3C497F00DB1F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C83FD8A1D3C497F00DB1F86 /* BirlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C83FD8E1D3C497F00DB1F86 /* BirlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirlUITests.swift; sourceTree = "<group>"; };
+		2C83FD901D3C497F00DB1F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C83FD9C1D3C4DA900DB1F86 /* show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = show.mp3; sourceTree = "<group>"; };
+		2C83FD9E1D3C4E4800DB1F86 /* birl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birl.mp3; sourceTree = "<group>"; };
+		2C83FDA11D3C6DBC00DB1F86 /* que-num-vai-da-pai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "que-num-vai-da-pai.mp3"; sourceTree = "<group>"; };
+		2C83FDA31D3C6EE400DB1F86 /* iiiiiiuuuuuuuu-bmabma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "iiiiiiuuuuuuuu-bmabma.mp3"; sourceTree = "<group>"; };
+		2C83FDA41D3C6EE400DB1F86 /* 37-anos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "37-anos.mp3"; sourceTree = "<group>"; };
+		2C83FDA51D3C6EE400DB1F86 /* trapezio-descendente_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trapezio-descendente_1.mp3"; sourceTree = "<group>"; };
+		2C83FDA61D3C6EE400DB1F86 /* 13-memo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13-memo.mp3"; sourceTree = "<group>"; };
+		2C83FDA71D3C6EE400DB1F86 /* porra_10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porra_10.mp3; sourceTree = "<group>"; };
+		2C83FDA81D3C6EE400DB1F86 /* bambam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bambam.mp3; sourceTree = "<group>"; };
+		2C83FDAF1D3C70C800DB1F86 /* bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3"; sourceTree = "<group>"; };
+		2C83FDB01D3C70C800DB1F86 /* trapezio-descendente-e-o-nome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "trapezio-descendente-e-o-nome.mp3"; sourceTree = "<group>"; };
+		2C83FDB11D3C70C800DB1F86 /* quero-mais-quero-mais.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "quero-mais-quero-mais.mp3"; sourceTree = "<group>"; };
+		2C83FDB51D3C715300DB1F86 /* bam_bam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bam_bam.mp3; sourceTree = "<group>"; };
+		2C83FDB71D3C721000DB1F86 /* bambam-aqui-e-bodybuilding-porra-mp3cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bambam-aqui-e-bodybuilding-porra-mp3cut.mp3"; sourceTree = "<group>"; };
+		2C83FDB81D3C721000DB1F86 /* bambam-_aqui-e-bodybuilding-porra_-360p.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bambam-_aqui-e-bodybuilding-porra_-360p.mp3"; sourceTree = "<group>"; };
+		2C83FDB91D3C721000DB1F86 /* eita-porra_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "eita-porra_1.mp3"; sourceTree = "<group>"; };
+		2C83FDBD1D3C740200DB1F86 /* AudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C83FD681D3C497F00DB1F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD7C1D3C497F00DB1F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD871D3C497F00DB1F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C83FD621D3C497F00DB1F86 = {
+			isa = PBXGroup;
+			children = (
+				2C83FD6D1D3C497F00DB1F86 /* Birl */,
+				2C83FD821D3C497F00DB1F86 /* BirlTests */,
+				2C83FD8D1D3C497F00DB1F86 /* BirlUITests */,
+				2C83FD6C1D3C497F00DB1F86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C83FD6C1D3C497F00DB1F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C83FD6B1D3C497F00DB1F86 /* Birl.app */,
+				2C83FD7F1D3C497F00DB1F86 /* BirlTests.xctest */,
+				2C83FD8A1D3C497F00DB1F86 /* BirlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C83FD6D1D3C497F00DB1F86 /* Birl */ = {
+			isa = PBXGroup;
+			children = (
+				2C83FDA01D3C4E5100DB1F86 /* Audios */,
+				2C83FD6E1D3C497F00DB1F86 /* AppDelegate.swift */,
+				2C83FD701D3C497F00DB1F86 /* ViewController.swift */,
+				2C83FDBD1D3C740200DB1F86 /* AudioTableViewCell.swift */,
+				2C83FD721D3C497F00DB1F86 /* Main.storyboard */,
+				2C83FD751D3C497F00DB1F86 /* Assets.xcassets */,
+				2C83FD771D3C497F00DB1F86 /* LaunchScreen.storyboard */,
+				2C83FD7A1D3C497F00DB1F86 /* Info.plist */,
+			);
+			path = Birl;
+			sourceTree = "<group>";
+		};
+		2C83FD821D3C497F00DB1F86 /* BirlTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C83FD831D3C497F00DB1F86 /* BirlTests.swift */,
+				2C83FD851D3C497F00DB1F86 /* Info.plist */,
+			);
+			path = BirlTests;
+			sourceTree = "<group>";
+		};
+		2C83FD8D1D3C497F00DB1F86 /* BirlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C83FD8E1D3C497F00DB1F86 /* BirlUITests.swift */,
+				2C83FD901D3C497F00DB1F86 /* Info.plist */,
+			);
+			path = BirlUITests;
+			sourceTree = "<group>";
+		};
+		2C83FDA01D3C4E5100DB1F86 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				2C83FDB71D3C721000DB1F86 /* bambam-aqui-e-bodybuilding-porra-mp3cut.mp3 */,
+				2C83FDB81D3C721000DB1F86 /* bambam-_aqui-e-bodybuilding-porra_-360p.mp3 */,
+				2C83FDB91D3C721000DB1F86 /* eita-porra_1.mp3 */,
+				2C83FDB51D3C715300DB1F86 /* bam_bam.mp3 */,
+				2C83FDAF1D3C70C800DB1F86 /* bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3 */,
+				2C83FDB01D3C70C800DB1F86 /* trapezio-descendente-e-o-nome.mp3 */,
+				2C83FDB11D3C70C800DB1F86 /* quero-mais-quero-mais.mp3 */,
+				2C83FDA31D3C6EE400DB1F86 /* iiiiiiuuuuuuuu-bmabma.mp3 */,
+				2C83FDA41D3C6EE400DB1F86 /* 37-anos.mp3 */,
+				2C83FDA51D3C6EE400DB1F86 /* trapezio-descendente_1.mp3 */,
+				2C83FDA61D3C6EE400DB1F86 /* 13-memo.mp3 */,
+				2C83FDA71D3C6EE400DB1F86 /* porra_10.mp3 */,
+				2C83FDA81D3C6EE400DB1F86 /* bambam.mp3 */,
+				2C83FDA11D3C6DBC00DB1F86 /* que-num-vai-da-pai.mp3 */,
+				2C83FD9C1D3C4DA900DB1F86 /* show.mp3 */,
+				2C83FD9E1D3C4E4800DB1F86 /* birl.mp3 */,
+			);
+			name = Audios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C83FD6A1D3C497F00DB1F86 /* Birl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C83FD931D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "Birl" */;
+			buildPhases = (
+				2C83FD671D3C497F00DB1F86 /* Sources */,
+				2C83FD681D3C497F00DB1F86 /* Frameworks */,
+				2C83FD691D3C497F00DB1F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Birl;
+			productName = Birl;
+			productReference = 2C83FD6B1D3C497F00DB1F86 /* Birl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C83FD7E1D3C497F00DB1F86 /* BirlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C83FD961D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "BirlTests" */;
+			buildPhases = (
+				2C83FD7B1D3C497F00DB1F86 /* Sources */,
+				2C83FD7C1D3C497F00DB1F86 /* Frameworks */,
+				2C83FD7D1D3C497F00DB1F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C83FD811D3C497F00DB1F86 /* PBXTargetDependency */,
+			);
+			name = BirlTests;
+			productName = BirlTests;
+			productReference = 2C83FD7F1D3C497F00DB1F86 /* BirlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C83FD891D3C497F00DB1F86 /* BirlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C83FD991D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "BirlUITests" */;
+			buildPhases = (
+				2C83FD861D3C497F00DB1F86 /* Sources */,
+				2C83FD871D3C497F00DB1F86 /* Frameworks */,
+				2C83FD881D3C497F00DB1F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C83FD8C1D3C497F00DB1F86 /* PBXTargetDependency */,
+			);
+			name = BirlUITests;
+			productName = BirlUITests;
+			productReference = 2C83FD8A1D3C497F00DB1F86 /* BirlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C83FD631D3C497F00DB1F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matheus Ruschel";
+				TargetAttributes = {
+					2C83FD6A1D3C497F00DB1F86 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P9BMV4WXD2;
+					};
+					2C83FD7E1D3C497F00DB1F86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2C83FD6A1D3C497F00DB1F86;
+					};
+					2C83FD891D3C497F00DB1F86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2C83FD6A1D3C497F00DB1F86;
+					};
+				};
+			};
+			buildConfigurationList = 2C83FD661D3C497F00DB1F86 /* Build configuration list for PBXProject "Birl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C83FD621D3C497F00DB1F86;
+			productRefGroup = 2C83FD6C1D3C497F00DB1F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C83FD6A1D3C497F00DB1F86 /* Birl */,
+				2C83FD7E1D3C497F00DB1F86 /* BirlTests */,
+				2C83FD891D3C497F00DB1F86 /* BirlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C83FD691D3C497F00DB1F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C83FDB31D3C70C800DB1F86 /* trapezio-descendente-e-o-nome.mp3 in Resources */,
+				2C83FDB41D3C70C800DB1F86 /* quero-mais-quero-mais.mp3 in Resources */,
+				2C83FD791D3C497F00DB1F86 /* LaunchScreen.storyboard in Resources */,
+				2C83FDAB1D3C6EE400DB1F86 /* trapezio-descendente_1.mp3 in Resources */,
+				2C83FDB21D3C70C800DB1F86 /* bambam-enlouquecendo-no-treino-com-felipe-franco-2.mp3 in Resources */,
+				2C83FDAA1D3C6EE400DB1F86 /* 37-anos.mp3 in Resources */,
+				2C83FDBB1D3C721000DB1F86 /* bambam-_aqui-e-bodybuilding-porra_-360p.mp3 in Resources */,
+				2C83FDAD1D3C6EE400DB1F86 /* porra_10.mp3 in Resources */,
+				2C83FDAE1D3C6EE400DB1F86 /* bambam.mp3 in Resources */,
+				2C83FDBC1D3C721000DB1F86 /* eita-porra_1.mp3 in Resources */,
+				2C83FDB61D3C715300DB1F86 /* bam_bam.mp3 in Resources */,
+				2C83FD9F1D3C4E4800DB1F86 /* birl.mp3 in Resources */,
+				2C83FDAC1D3C6EE400DB1F86 /* 13-memo.mp3 in Resources */,
+				2C83FDA21D3C6DBC00DB1F86 /* que-num-vai-da-pai.mp3 in Resources */,
+				2C83FD761D3C497F00DB1F86 /* Assets.xcassets in Resources */,
+				2C83FDBA1D3C721000DB1F86 /* bambam-aqui-e-bodybuilding-porra-mp3cut.mp3 in Resources */,
+				2C83FD741D3C497F00DB1F86 /* Main.storyboard in Resources */,
+				2C83FDA91D3C6EE400DB1F86 /* iiiiiiuuuuuuuu-bmabma.mp3 in Resources */,
+				2C83FD9D1D3C4DA900DB1F86 /* show.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD7D1D3C497F00DB1F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD881D3C497F00DB1F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C83FD671D3C497F00DB1F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C83FD711D3C497F00DB1F86 /* ViewController.swift in Sources */,
+				2C83FD6F1D3C497F00DB1F86 /* AppDelegate.swift in Sources */,
+				2C83FDBE1D3C740200DB1F86 /* AudioTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD7B1D3C497F00DB1F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C83FD841D3C497F00DB1F86 /* BirlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C83FD861D3C497F00DB1F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C83FD8F1D3C497F00DB1F86 /* BirlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C83FD811D3C497F00DB1F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C83FD6A1D3C497F00DB1F86 /* Birl */;
+			targetProxy = 2C83FD801D3C497F00DB1F86 /* PBXContainerItemProxy */;
+		};
+		2C83FD8C1D3C497F00DB1F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C83FD6A1D3C497F00DB1F86 /* Birl */;
+			targetProxy = 2C83FD8B1D3C497F00DB1F86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C83FD721D3C497F00DB1F86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C83FD731D3C497F00DB1F86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C83FD771D3C497F00DB1F86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C83FD781D3C497F00DB1F86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C83FD911D3C497F00DB1F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C83FD921D3C497F00DB1F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C83FD941D3C497F00DB1F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Birl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.Birl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C83FD951D3C497F00DB1F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Birl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.Birl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2C83FD971D3C497F00DB1F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BirlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.BirlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birl.app/Birl";
+			};
+			name = Debug;
+		};
+		2C83FD981D3C497F00DB1F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BirlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.BirlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birl.app/Birl";
+			};
+			name = Release;
+		};
+		2C83FD9A1D3C497F00DB1F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BirlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.BirlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Birl;
+			};
+			name = Debug;
+		};
+		2C83FD9B1D3C497F00DB1F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BirlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matheus.tasks.BirlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Birl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C83FD661D3C497F00DB1F86 /* Build configuration list for PBXProject "Birl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C83FD911D3C497F00DB1F86 /* Debug */,
+				2C83FD921D3C497F00DB1F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C83FD931D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "Birl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C83FD941D3C497F00DB1F86 /* Debug */,
+				2C83FD951D3C497F00DB1F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C83FD961D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "BirlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C83FD971D3C497F00DB1F86 /* Debug */,
+				2C83FD981D3C497F00DB1F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C83FD991D3C497F00DB1F86 /* Build configuration list for PBXNativeTarget "BirlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C83FD9A1D3C497F00DB1F86 /* Debug */,
+				2C83FD9B1D3C497F00DB1F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C83FD631D3C497F00DB1F86 /* Project object */;
+}
