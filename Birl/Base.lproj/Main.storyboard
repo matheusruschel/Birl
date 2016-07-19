@@ -32,15 +32,12 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAl-65-yYC">
                                                     <rect key="frame" x="492" y="8" width="90" height="83.5"/>
-                                                    <state key="normal">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
                                                     <connections>
                                                         <action selector="whatsAppButtonClicked:" destination="ONW-ZC-uYy" eventType="touchUpInside" id="lsl-ij-zJh"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poi-Bo-0zZ">
-                                                    <rect key="frame" x="8" y="8" width="474" height="83.5"/>
+                                                    <rect key="frame" x="8" y="8" width="484" height="83.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -53,9 +50,15 @@
                                                 <constraint firstItem="lAl-65-yYC" firstAttribute="width" secondItem="K7B-j0-a4h" secondAttribute="width" multiplier="0.15" id="PQ5-r5-bir"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="poi-Bo-0zZ" secondAttribute="bottom" id="UgA-UY-3cQ"/>
                                                 <constraint firstItem="poi-Bo-0zZ" firstAttribute="top" secondItem="K7B-j0-a4h" secondAttribute="topMargin" id="WJm-0H-lDb"/>
+                                                <constraint firstItem="lAl-65-yYC" firstAttribute="leading" secondItem="poi-Bo-0zZ" secondAttribute="trailing" id="XSY-Ye-31k"/>
                                                 <constraint firstItem="lAl-65-yYC" firstAttribute="leading" secondItem="poi-Bo-0zZ" secondAttribute="trailing" constant="10" id="nIf-zr-p1i"/>
                                                 <constraint firstItem="poi-Bo-0zZ" firstAttribute="leading" secondItem="K7B-j0-a4h" secondAttribute="leadingMargin" id="ys4-x4-0NL"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="nIf-zr-p1i"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="titleLabel" destination="poi-Bo-0zZ" id="njf-Xf-G1T"/>

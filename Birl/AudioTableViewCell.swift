@@ -8,18 +8,20 @@
 
 import UIKit
 
-protocol WhatsAppButtonDelegate {
+protocol ButtonDelegate {
     
-    func whatsAppButtonClicked(forIndex index:Int?, cell:UITableViewCell, sender:UIButton)
+    func shareButtonClicked(forIndex index:Int?, cell:UITableViewCell, sender:UIButton)
 }
+let cellColors = [0xD1F2A5,0xEFFAB4,0xFFC48C,0xFF9F80,0xF56991]
+
 
 class AudioTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var whatsAppButton: UIButton!
-    var whatsAppDelegate:WhatsAppButtonDelegate?
+    var buttonDelegate:ButtonDelegate?
     var cellIndex:Int?
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,20 +32,38 @@ class AudioTableViewCell: UITableViewCell {
         super.drawRect(rect)
     }
     
-    func configure() {
+    func configure(text:String, forRow index:Int) {
         
-        let image = UIImage(named: "whatsapp")
+        self.selectionStyle = .None
+        let image = UIImage(named: "level_up")
         let tintedImage = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         whatsAppButton.setImage(tintedImage, forState: .Normal)
-        whatsAppButton.tintColor = UIColor(netHex: 0x43d854)
-        self.titleLabel.font = UIFont(name: "HelveticaNeue-Light", size: 18)
+        whatsAppButton.tintColor = UIColor(netHex: 0x34495e)
+        self.titleLabel.font = UIFont(name: "HelveticaNeue", size: 18)
+        self.titleLabel.textColor = UIColor(netHex: 0x34495e)
+        self.cellIndex = index
+        self.titleLabel.text = text
         
+        if (index+1) % 5 == 0 {
+            self.backgroundColor = UIColor(netHex:cellColors[4])
+        } else if (index+1) % 4 == 0 {
+            self.backgroundColor = UIColor(netHex:cellColors[3])
+        } else if (index+1) % 3 == 0 {
+            self.backgroundColor = UIColor(netHex:cellColors[2])
+        } else if (index+1) % 2 == 0 {
+            self.backgroundColor = UIColor(netHex:cellColors[1])
+        } else {
+            self.backgroundColor = UIColor(netHex:cellColors[0])
+        }
+        
+
     }
     
     
     @IBAction func whatsAppButtonClicked(sender: UIButton) {
-        whatsAppDelegate?.whatsAppButtonClicked(forIndex: cellIndex,cell: self, sender: sender)
+        buttonDelegate?.shareButtonClicked(forIndex: cellIndex,cell: self, sender: sender)
     }
+    
 
 }
 extension UIColor {
